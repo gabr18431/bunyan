@@ -24,6 +24,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
   </head>
 
   <body>
@@ -35,7 +36,9 @@
           </a>
           <div class="large-menu">
             <a href="/index.html">الرئيسية <i class="bx bx-home"></i> </a>
-            <a href="/index.html">التواصل <i class="bx bx-conversation"></i></a>
+            <a href="/contact.html"
+              >التواصل <i class="bx bx-conversation"></i
+            ></a>
             <a href="/index.html">المستندات <i class="bx bx-bookmarks"></i></a>
             <a href="/index.html">الخدمات <i class="bx bxs-package"></i></a>
             <a href="/index.html">الشركة <i class="bx bx-buildings"></i></a>
@@ -216,8 +219,129 @@
         </div>
       </div>
     </section>
+    <section class="options">
+      <div class="content">
+        <h5>
+          مميزات التعاون مع <br />
+          منصة بنيان
+        </h5>
+        <div class="cards-box">
+          <div id="card1" class="card">
+            <div class="card-img"></div>
+            <div class="card__content">
+              <p class="card__title">
+                <span>الابتكار و التطوير</span>
+              </p>
+            </div>
+          </div>
+          <div id="card2" class="card">
+            <div class="card-img"></div>
+            <div class="card__content">
+              <p class="card__title">
+                <span> الاهتمام بالعملاء </span>
+              </p>
+            </div>
+          </div>
+          <div id="card3" class="card">
+            <div class="card-img"></div>
+            <div class="card__content">
+              <p class="card__title">
+                <span>فريق عمل احترافي </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="custom">
+      <div class="container">
+        <div class="main-title">
+          <h3>بعض من عملائنا</h3>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p>شركة صيدليات النور</p>
+              <p>شركة التويجري للتجارة</p>
+              <p>شركة اوتاد العقارية</p>
+              <p>شركة القناعة</p>
+            </div>
+            <div class="swiper-slide">
+              <p>شركة صيدليات النور</p>
+              <p>شركة التويجري للتجارة</p>
+              <p>شركة اوتاد العقارية</p>
+              <p>شركة القناعة</p>
+            </div>
+            <div class="swiper-slide">
+              <p>شركة صيدليات النور</p>
+              <p>شركة التويجري للتجارة</p>
+              <p>شركة اوتاد العقارية</p>
+              <p>شركة القناعة</p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!--start contact -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="main-heading">
+          <h2>تواصل معنا</h2>
+          <p>
+            تميز علي منافسيك بالشراكة مع افضل شركات التسويق الإلكتروني وتواصل
+            معنا الآن
+          </p>
+        </div>
+        <div class="content">
+          <div class="info">
+            <div class="div1">
+              <h4>ابقى على تواصل</h4>
+              <span class="phone"> 0599806998 <i class='bx bx-phone bx-tada' ></i> </span>
+              <span class="phone">info@bunyan998.com  <i class='bx bx-envelope bx-tada' ></i></span>
+            </div>
+            <div class="div2">
+              <h4>نتشرف بك <i class='bx bx-location-plus bx-tada' ></i></h4>
+              <address>
+                حي اليرموك <br />
+                الرياض <br />
+                المملكة العربية السعودية
+              </address>
+            </div>
+          </div>
+          <form action="">
+            <input
+              class="main-input"
+              type="text"
+              name="name"
+              placeholder="الاسم"
+            />
+            <input
+              class="main-input"
+              type="email"
+              name="mail"
+              placeholder="الايميل"
+            />
+            <textarea
+              class="main-input"
+              name="message"
+              placeholder="رسالتك"
+            ></textarea>
+            <input type="submit" value="ارسال" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+
     <script src="/js/main.js"></script>
   </body>
 </html>
