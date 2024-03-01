@@ -1,24 +1,15 @@
-// sliders
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: 'vertical',
-  loop: true,
-  autoplay: {
-    delay: 4000, // تحديد فترة التوقف بين كل انتقال (بالميلي ثانية)
-    disableOnInteraction: false, // يمنع تعطيل التمرير التلقائي بمجرد تفاعل المستخدم (افتراضيًا true)
-  },
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true, // تفعيل النقر على ال pagination
-  },
+// system-component ***************
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+let systems = document.querySelectorAll('.system-component');
 
-console.log('tessssssss');
+async function handelClickSystemItem(item) {
+  let currentSystem = item.closest('.system-component');
+  await systems.forEach(system => {
+    if (system !== currentSystem) {
+      system.classList.remove('show');
+    }
+  })
+  currentSystem.classList.toggle('show');
+}
+

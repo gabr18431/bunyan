@@ -38,9 +38,9 @@
             <a href="/contact.html"
               >التواصل <i class="bx bx-conversation"></i
             ></a>
-            <a href="/index.html">المستندات <i class="bx bx-bookmarks"></i></a>
-            <a href="/index.html">الخدمات <i class="bx bxs-package"></i></a>
-            <a href="/index.html">الشركة <i class="bx bx-buildings"></i></a>
+            <a href="/documents.html">المستندات <i class="bx bx-bookmarks"></i></a>
+            <a href="/systems.html">الخدمات <i class="bx bxs-package"></i></a>
+            <a href="/about.html">الشركة <i class="bx bx-buildings"></i></a>
           </div>
         </nav>
       </div>
@@ -428,5 +428,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
+
+    <script>
+      // sliders
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+  autoplay: {
+    delay: 4000, // تحديد فترة التوقف بين كل انتقال (بالميلي ثانية)
+    disableOnInteraction: false, // يمنع تعطيل التمرير التلقائي بمجرد تفاعل المستخدم (افتراضيًا true)
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // تفعيل النقر على ال pagination
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+    </script>
   </body>
 </html>

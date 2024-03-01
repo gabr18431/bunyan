@@ -58,6 +58,34 @@ ul {
   color: var(--black3);
   position: absolute;
   top: 40%;
+  position: relative;
+}
+
+.page-header {
+  padding: 20px;
+  background-image: url("../img/Group-29-1.webp");
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-header h2 {
+  color: #066bf9;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.page-header p {
+  margin-bottom: 50px;
+  color: #798795;
+  text-align: center;
 }
 
 header {

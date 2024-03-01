@@ -1,0 +1,33 @@
+/* start about page **********************************************/
+.page-header.about-header {
+    background-image: url('../img/A_professional_and_sleek_image_of_a_company_spec\ \(1\).jpg');
+  }
+  .about .container {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    gap: 20px;
+  }
+  .about .container img {
+    width: 50%;
+    height: auto;
+    border-radius: 0 35px ;
+  }
+  .about .info h2 {
+    color: #066bf9;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .about .info p {
+    color: #798795;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  marquee {
+    margin-top: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #04152d;
+    text-align: right;
+  }

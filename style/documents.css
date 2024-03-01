@@ -1,0 +1,47 @@
+.documents {
+    padding: 50px 0;
+}
+
+.page-header.documents-header {
+    background-image: url('../img/Group-10.png');
+}
+
+.page-header.documents-header p {
+    color: #04152d;
+}
+
+.documents .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 20px;
+}
+
+.documents .item {
+    width: 25%;
+    max-width: 300px;
+    min-width: 160px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 15px 0;
+    border: 1px solid #04152d;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s linear;
+}
+
+.documents .item img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.documents .item:hover img {
+    transform: scale(1.1);
+}
+
+.documents .item:hover {
+    transform: scale(0.96);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
